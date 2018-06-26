@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.5\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.5\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0BEB70DF-2098-4F01-9985-AE78A5589144}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VerificationCode</RootNamespace>
+    <AssemblyName>VerificationCode</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GetRandom">
+      <HintPath>bin\VerificationCode\GetRandom.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.5\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\VerificationCode\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <Content Include="VerificationCode\VerificationCode.ashx" />
+    <None Include="Properties\PublishProfiles\app.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="VerificationCode\src\200_100\0.jpg" />
+    <Content Include="VerificationCode\src\200_100\1.jpg" />
+    <Content Include="VerificationCode\src\200_100\10.jpg" />
+    <Content Include="VerificationCode\src\200_100\11.jpg" />
+    <Content Include="VerificationCode\src\200_100\12.jpg" />
+    <Content Include="VerificationCode\src\200_100\13.jpg" />
+    <Content Include="VerificationCode\src\200_100\14.jpg" />
+    <Content Include="VerificationCode\src\200_100\15.jpg" />
+    <Content Include="VerificationCode\src\200_100\16.jpg" />
+    <Content Include="VerificationCode\src\200_100\17.jpg" />
+    <Content Include="VerificationCode\src\200_100\18.jpg" />
+    <Content Include="VerificationCode\src\200_100\19.jpg" />
+    <Content Include="VerificationCode\src\200_100\2.jpg" />
+    <Content Include="VerificationCode\src\200_100\20.jpg" />
+    <Content Include="VerificationCode\src\200_100\21.jpg" />
+    <Content Include="VerificationCode\src\200_100\22.jpg" />
+    <Content Include="VerificationCode\src\200_100\23.jpg" />
+    <Content Include="VerificationCode\src\200_100\24.jpg" />
+    <Content Include="VerificationCode\src\200_100\25.jpg" />
+    <Content Include="VerificationCode\src\200_100\26.jpg" />
+    <Content Include="VerificationCode\src\200_100\27.jpg" />
+    <Content Include="VerificationCode\src\200_100\28.jpg" />
+    <Content Include="VerificationCode\src\200_100\29.jpg" />
+    <Content Include="VerificationCode\src\200_100\3.jpg" />
+    <Content Include="VerificationCode\src\200_100\30.jpg" />
+    <Content Include="VerificationCode\src\200_100\31.jpg" />
+    <Content Include="VerificationCode\src\200_100\32.jpg" />
+    <Content Include="VerificationCode\src\200_100\33.jpg" />
+    <Content Include="VerificationCode\src\200_100\34.jpg" />
+    <Content Include="VerificationCode\src\200_100\35.jpg" />
+    <Content Include="VerificationCode\src\200_100\36.jpg" />
+    <Content Include="VerificationCode\src\200_100\37.jpg" />
+    <Content Include="VerificationCode\src\200_100\38.jpg" />
+    <Content Include="VerificationCode\src\200_100\39.jpg" />
+    <Content Include="VerificationCode\src\200_100\4.jpg" />
+    <Content Include="VerificationCode\src\200_100\40.jpg" />
+    <Content Include="VerificationCode\src\200_100\41.jpg" />
+    <Content Include="VerificationCode\src\200_100\42.jpg" />
+    <Content Include="VerificationCode\src\200_100\43.jpg" />
+    <Content Include="VerificationCode\src\200_100\44.jpg" />
+    <Content Include="VerificationCode\src\200_100\45.jpg" />
+    <Content Include="VerificationCode\src\200_100\46.jpg" />
+    <Content Include="VerificationCode\src\200_100\47.jpg" />
+    <Content Include="VerificationCode\src\200_100\48.jpg" />
+    <Content Include="VerificationCode\src\200_100\49.jpg" />
+    <Content Include="VerificationCode\src\200_100\5.jpg" />
+    <Content Include="VerificationCode\src\200_100\50.jpg" />
+    <Content Include="VerificationCode\src\200_100\51.jpg" />
+    <Content Include="VerificationCode\src\200_100\52.jpg" />
+    <Content Include="VerificationCode\src\200_100\53.jpg" />
+    <Content Include="VerificationCode\src\200_100\54.jpg" />
+    <Content Include="VerificationCode\src\200_100\55.jpg" />
+    <Content Include="VerificationCode\src\200_100\56.jpg" />
+    <Content Include="VerificationCode\src\200_100\57.jpg" />
+    <Content Include="VerificationCode\src\200_100\58.jpg" />
+    <Content Include="VerificationCode\src\200_100\59.jpg" />
+    <Content Include="VerificationCode\src\200_100\6.jpg" />
+    <Content Include="VerificationCode\src\200_100\7.jpg" />
+    <Content Include="VerificationCode\src\200_100\8.jpg" />
+    <Content Include="VerificationCode\src\200_100\9.jpg" />
+    <Content Include="VerificationCode\src\300_200\0.jpg" />
+    <Content Include="VerificationCode\src\300_200\1.jpg" />
+    <Content Include="VerificationCode\src\300_200\10.jpg" />
+    <Content Include="VerificationCode\src\300_200\11.jpg" />
+    <Content Include="VerificationCode\src\300_200\12.jpg" />
+    <Content Include="VerificationCode\src\300_200\13.jpg" />
+    <Content Include="VerificationCode\src\300_200\14.jpg" />
+    <Content Include="VerificationCode\src\300_200\15.jpg" />
+    <Content Include="VerificationCode\src\300_200\16.jpg" />
+    <Content Include="VerificationCode\src\300_200\17.jpg" />
+    <Content Include="VerificationCode\src\300_200\18.jpg" />
+    <Content Include="VerificationCode\src\300_200\19.jpg" />
+    <Content Include="VerificationCode\src\300_200\2.jpg" />
+    <Content Include="VerificationCode\src\300_200\20.jpg" />
+    <Content Include="VerificationCode\src\300_200\21.jpg" />
+    <Content Include="VerificationCode\src\300_200\22.jpg" />
+    <Content Include="VerificationCode\src\300_200\23.jpg" />
+    <Content Include="VerificationCode\src\300_200\24.jpg" />
+    <Content Include="VerificationCode\src\300_200\25.jpg" />
+    <Content Include="VerificationCode\src\300_200\26.jpg" />
+    <Content Include="VerificationCode\src\300_200\27.jpg" />
+    <Content Include="VerificationCode\src\300_200\28.jpg" />
+    <Content Include="VerificationCode\src\300_200\29.jpg" />
+    <Content Include="VerificationCode\src\300_200\3.jpg" />
+    <Content Include="VerificationCode\src\300_200\30.jpg" />
+    <Content Include="VerificationCode\src\300_200\31.jpg" />
+    <Content Include="VerificationCode\src\300_200\32.jpg" />
+    <Content Include="VerificationCode\src\300_200\33.jpg" />
+    <Content Include="VerificationCode\src\300_200\34.jpg" />
+    <Content Include="VerificationCode\src\300_200\35.jpg" />
+    <Content Include="VerificationCode\src\300_200\36.jpg" />
+    <Content Include="VerificationCode\src\300_200\37.jpg" />
+    <Content Include="VerificationCode\src\300_200\38.jpg" />
+    <Content Include="VerificationCode\src\300_200\39.jpg" />
+    <Content Include="VerificationCode\src\300_200\4.jpg" />
+    <Content Include="VerificationCode\src\300_200\40.jpg" />
+    <Content Include="VerificationCode\src\300_200\41.jpg" />
+    <Content Include="VerificationCode\src\300_200\42.jpg" />
+    <Content Include="VerificationCode\src\300_200\43.jpg" />
+    <Content Include="VerificationCode\src\300_200\44.jpg" />
+    <Content Include="VerificationCode\src\300_200\45.jpg" />
+    <Content Include="VerificationCode\src\300_200\46.jpg" />
+    <Content Include="VerificationCode\src\300_200\47.jpg" />
+    <Content Include="VerificationCode\src\300_200\48.jpg" />
+    <Content Include="VerificationCode\src\300_200\49.jpg" />
+    <Content Include="VerificationCode\src\300_200\5.jpg" />
+    <Content Include="VerificationCode\src\300_200\50.jpg" />
+    <Content Include="VerificationCode\src\300_200\51.jpg" />
+    <Content Include="VerificationCode\src\300_200\52.jpg" />
+    <Content Include="VerificationCode\src\300_200\53.jpg" />
+    <Content Include="VerificationCode\src\300_200\54.jpg" />
+    <Content Include="VerificationCode\src\300_200\55.jpg" />
+    <Content Include="VerificationCode\src\300_200\56.jpg" />
+    <Content Include="VerificationCode\src\300_200\57.jpg" />
+    <Content Include="VerificationCode\src\300_200\58.jpg" />
+    <Content Include="VerificationCode\src\300_200\59.jpg" />
+    <Content Include="VerificationCode\src\300_200\6.jpg" />
+    <Content Include="VerificationCode\src\300_200\7.jpg" />
+    <Content Include="VerificationCode\src\300_200\8.jpg" />
+    <Content Include="VerificationCode\src\300_200\9.jpg" />
+    <Content Include="VerificationCode\src\300_300\0.jpg" />
+    <Content Include="VerificationCode\src\300_300\1.jpg" />
+    <Content Include="VerificationCode\src\300_300\10.jpg" />
+    <Content Include="VerificationCode\src\300_300\11.jpg" />
+    <Content Include="VerificationCode\src\300_300\12.jpg" />
+    <Content Include="VerificationCode\src\300_300\13.jpg" />
+    <Content Include="VerificationCode\src\300_300\14.jpg" />
+    <Content Include="VerificationCode\src\300_300\15.jpg" />
+    <Content Include="VerificationCode\src\300_300\16.jpg" />
+    <Content Include="VerificationCode\src\300_300\17.jpg" />
+    <Content Include="VerificationCode\src\300_300\18.jpg" />
+    <Content Include="VerificationCode\src\300_300\19.jpg" />
+    <Content Include="VerificationCode\src\300_300\2.jpg" />
+    <Content Include="VerificationCode\src\300_300\20.jpg" />
+    <Content Include="VerificationCode\src\300_300\21.jpg" />
+    <Content Include="VerificationCode\src\300_300\22.jpg" />
+    <Content Include="VerificationCode\src\300_300\23.jpg" />
+    <Content Include="VerificationCode\src\300_300\24.jpg" />
+    <Content Include="VerificationCode\src\300_300\25.jpg" />
+    <Content Include="VerificationCode\src\300_300\26.jpg" />
+    <Content Include="VerificationCode\src\300_300\27.jpg" />
+    <Content Include="VerificationCode\src\300_300\28.jpg" />
+    <Content Include="VerificationCode\src\300_300\29.jpg" />
+    <Content Include="VerificationCode\src\300_300\3.jpg" />
+    <Content Include="VerificationCode\src\300_300\30.jpg" />
+    <Content Include="VerificationCode\src\300_300\31.jpg" />
+    <Content Include="VerificationCode\src\300_300\32.jpg" />
+    <Content Include="VerificationCode\src\300_300\33.jpg" />
+    <Content Include="VerificationCode\src\300_300\34.jpg" />
+    <Content Include="VerificationCode\src\300_300\35.jpg" />
+    <Content Include="VerificationCode\src\300_300\36.jpg" />
+    <Content Include="VerificationCode\src\300_300\37.jpg" />
+    <Content Include="VerificationCode\src\300_300\38.jpg" />
+    <Content Include="VerificationCode\src\300_300\39.jpg" />
+    <Content Include="VerificationCode\src\300_300\4.jpg" />
+    <Content Include="VerificationCode\src\300_300\40.jpg" />
+    <Content Include="VerificationCode\src\300_300\41.jpg" />
+    <Content Include="VerificationCode\src\300_300\42.jpg" />
+    <Content Include="VerificationCode\src\300_300\43.jpg" />
+    <Content Include="VerificationCode\src\300_300\44.jpg" />
+    <Content Include="VerificationCode\src\300_300\45.jpg" />
+    <Content Include="VerificationCode\src\300_300\46.jpg" />
+    <Content Include="VerificationCode\src\300_300\47.jpg" />
+    <Content Include="VerificationCode\src\300_300\48.jpg" />
+    <Content Include="VerificationCode\src\300_300\49.jpg" />
+    <Content Include="VerificationCode\src\300_300\5.jpg" />
+    <Content Include="VerificationCode\src\300_300\50.jpg" />
+    <Content Include="VerificationCode\src\300_300\51.jpg" />
+    <Content Include="VerificationCode\src\300_300\52.jpg" />
+    <Content Include="VerificationCode\src\300_300\53.jpg" />
+    <Content Include="VerificationCode\src\300_300\54.jpg" />
+    <Content Include="VerificationCode\src\300_300\55.jpg" />
+    <Content Include="VerificationCode\src\300_300\56.jpg" />
+    <Content Include="VerificationCode\src\300_300\57.jpg" />
+    <Content Include="VerificationCode\src\300_300\58.jpg" />
+    <Content Include="VerificationCode\src\300_300\59.jpg" />
+    <Content Include="VerificationCode\src\300_300\6.jpg" />
+    <Content Include="VerificationCode\src\300_300\7.jpg" />
+    <Content Include="VerificationCode\src\300_300\8.jpg" />
+    <Content Include="VerificationCode\src\300_300\9.jpg" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VerificationCode\SqlBase.cs" />
+    <Compile Include="VerificationCode\VerificationCode.ashx.cs">
+      <DependentUpon>VerificationCode.ashx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>58991</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:58991/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。使用“NuGet 程序包还原”可下载这些程序包。有关更多信息，请参见 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.5\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.5\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

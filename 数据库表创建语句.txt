@@ -1,0 +1,17 @@
+TRUNCATE TABLE VerificationCode
+IF OBJECT_ID ('dbo.VerificationCode') IS NOT NULL
+	DROP TABLE dbo.VerificationCode
+GO
+
+CREATE TABLE dbo.VerificationCode
+	(
+	ID            INT IDENTITY NOT NULL,
+	Code          NVARCHAR (50) NULL,
+	token         NVARCHAR (50) NULL,
+	code_errornum INT CONSTRAINT DF_VerificationCode_code_errornum DEFAULT ((0)) NULL,
+	DataState     INT CONSTRAINT DF_VerificationCode_DataState DEFAULT ((0)) NULL,
+	isCheck       NVARCHAR (50) NULL,
+	JoinDate      DATETIME CONSTRAINT DF_VerificationCode_JoinDate DEFAULT (getdate()) NULL,
+	CONSTRAINT PK_VerificationCode PRIMARY KEY (ID)
+	)
+GO
